@@ -148,8 +148,8 @@ SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
 
 # Support
-GROUP = os.environ.get("GROUP", "helpforRYUU")
-CHANNEL = os.environ.get("CHANNEL", "Belajarbersamaryuu")
+GROUP = os.environ.get("GROUP", "Brothersexsid")
+CHANNEL = os.environ.get("CHANNEL", "gabutnyaoll")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -167,7 +167,7 @@ UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL", "https://github.com/OLLPROJECT/OLL-USERBOT"
 )
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Trans-Ubot")
+    "UPSTREAM_REPO_BRANCH", "OLL-Ubot")
 
 # SQL Database URI
 DB_URI = os.environ.get("DATABASE_URL", None)
@@ -212,7 +212,7 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "TRANS-BOT")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "OLL-BOT")
 
 # Custom Emoji Alive
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⚡")
@@ -469,7 +469,7 @@ with bot:
         main_help_button = [
             [
                 Button.inline("🗃 Modules", data="reopen"),       
-                Button.inline("VC-Plugin 📹", data="trans_inline"),
+                Button.inline("VC-Plugin 📹", data="oll_inline"),
             ],
             [
                 Button.url("📣 Updates", f"https://t.me/Belajarbersamaryuu"),
@@ -560,7 +560,7 @@ with bot:
                 current_page_number = int(looters)
                 buttons = paginate_help(
                     current_page_number, dugmeler, "helpme")
-                text = f"**📱 TRANS-Userbot Inline Menu ☎️**\n\n🐥 **Owner :** [{user.first_name}](tg://user?id={user.id})\n☕ **Jumlah :** `{len(dugmeler)}` **Modules**",
+                text = f"**📱 OLL-Userbot Inline Menu ☎️**\n\n🐥 **Owner :** [{user.first_name}](tg://user?id={user.id})\n☕ **Jumlah :** `{len(dugmeler)}` **Modules**",
                 await event.edit(
                     text,
                     file=translogo,
@@ -660,23 +660,23 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ TRANS-Userbot ✨",
-                    description="TRANS - BOT | Telethon",
-                    url="https://t.me/helpforRYUU",
+                    title="✨ OLL-Userbot ✨",
+                    description="OLL - BOT | Telethon",
+                    url="https://t.me/Brothersexsid",
                     thumb=InputWebDocument(
                         ALIVE_LOGO,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**TRANS-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✠ **Owner :** [{user.first_name}](tg://user?id={user.id})\n✠ **Asisstant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Updates:** @Belajarbersamaryuu\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**OLL-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✠ **Owner :** [{user.first_name}](tg://user?id={user.id})\n✠ **Asisstant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Updates:** @gabutnyaoll\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Groups",
-                                "https://t.me/helpforRYUU"),
+                                "https://t.me/Brothersexsid"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/RyuuXS/TRANS-BOT"),
+                                "https://github.com/OLLPROJECT/OLL-USERBOT"),
                         ],
                     ],
                     link_preview=False,
@@ -722,10 +722,10 @@ with bot:
             )
         )
         async def gback_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @TRANS-Userbot
+            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @OLL-Userbot
                 # https://t.me/TelethonChat/115200
                 text = (
-                    f"**📱 TRANS-Userbot Inline Menu ☎️**\n\n🐥 **Owner :** [{user.first_name}](tg://user?id={user.id})\n☕ **Jumlah :** `{len(dugmeler)}` **Modules**")
+                    f"**📱 OLL-Userbot Inline Menu ☎️**\n\n🐥 **Owner :** [{user.first_name}](tg://user?id={user.id})\n☕ **Jumlah :** `{len(dugmeler)}` **Modules**")
                 await event.edit(
                     text,
                     file=translogo,
@@ -734,7 +734,7 @@ with bot:
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"trans_inline")
+                data=re.compile(rb"oll_inline")
             )
         )
         async def on_plug_in_callback_query_handler(event):
