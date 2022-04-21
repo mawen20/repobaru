@@ -164,7 +164,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/RyuuXS/TRANS-BOT.git"
+    "UPSTREAM_REPO_URL", "https://github.com/OLLPROJECT/OLL-USERBOT"
 )
 UPSTREAM_REPO_BRANCH = os.environ.get(
     "UPSTREAM_REPO_BRANCH", "Trans-Ubot")
@@ -237,7 +237,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "TRANS-BOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "OLL-BOT")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "1.3")
@@ -247,20 +247,20 @@ ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/bac7a742118646dabffd4.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/9469c7a447c099ea49ccc.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/e59811480fbe3a4f8152a.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/9469c7a447c099ea49ccc.jpg"
 )
 
 # Picture For VCPLUGIN
 PLAY_PIC = (
-    os.environ.get("PLAY_PIC") or "https://telegra.ph/file/6213d267348beca02967.png"
+    os.environ.get("PLAY_PIC") or "https://telegra.ph/file/9469c7a447c099ea49ccc.jpg"
 )
 
 QUEUE_PIC = (
-    os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/d6f92c979ad96b2031cba.png"
+    os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/9469c7a447c099ea49ccc.jpg"
 )
 
 # Last.fm Module
@@ -356,7 +356,7 @@ async def check_botlog_chatid() -> None:
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**TRANS-BOT v{BOT_VER} is back up and running!**\n\n"
+        f"**OLL-BOT v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -579,7 +579,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**📱 TRANS-Userbot Inline Menu ☎️**\n\n🐥 **Owner :** [{user.first_name}](tg://user?id={user.id})\n☕ **Jumlah :** `{len(dugmeler)}` **Modules**"
+                text = f"**📱 OLL-Userbot Inline Menu ☎️**\n\n🐥 **Owner :** [{user.first_name}](tg://user?id={user.id})\n☕ **Jumlah :** `{len(dugmeler)}` **Modules**"
                 await event.edit(
                     text,
                     file=translogo,
@@ -595,33 +595,33 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@TRANSUserbot"):
+            if event.query.user_id == uid and query.startswith("@OLLUserbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = await event.builder.photo(
                     file=translogo,
                     link_preview=False,
-                    text = f"**📱 TRANS-Userbot Inline Menu ☎️**\n\n🐥 **Owner :** [{user.first_name}](tg://user?id={user.id})\n☕ **Jumlah :** `{len(dugmeler)}` **Modules**",
+                    text = f"**📱 OLL-Userbot Inline Menu ☎️**\n\n🐥 **Owner :** [{user.first_name}](tg://user?id={user.id})\n☕ **Jumlah :** `{len(dugmeler)}` **Modules**",
                     buttons=main_help_button
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository TRANS - BOT",
-                    url="https://t.me/helpforRYUU",
+                    description="Repository OLL - BOT",
+                    url="https://t.me/Brothersexsid",
                     thumb=InputWebDocument(
                         ALIVE_LOGO,
                         0,
                         "image/jpeg",
                         []),
-                    text="**TRANS-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✠ **Owner Repo :** [㊧𝐒𝐇𝐈𝐍/><\ -ᴇx](https://t.me/RYUUSHINNI)\n✠ **Support :** @helpforRYUU\n✠ **Repository :** [TRANS-UBOT](https://github.com/RyuuXS/TRANS-BOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**OLL-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✠ **Owner Repo :** [㊧𝐒𝐇𝐈𝐍/><\ -ᴇx](https://t.me/myname_is_oll)\n✠ **Support :** @Brothersexsid\n✠ **Repository :** [OLL-UBOT](https://github.com/OLLPROJECT/OLL-USERBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
-                                "https://t.me/helpforRYUU"),
+                                "https://t.me/Brothersexsid"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/RyuuXS/TRANS-BOT"),
+                                "https://github.com/OLLPROJECT/OLL-USERBOT"),
                         ],
                     ],
                     link_preview=False,
