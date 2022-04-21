@@ -1,9 +1,9 @@
 {
-  "name": "TRANS-BOT",
-  "description": "[TRANS-BOT] userbot Telegram modular yang berjalan pada Python 3.9+",
-  "logo": "https://telegra.ph/file/ea01d13a8b11919f77d67.jpg",
-  "keywords": ["telegram", "userbot", "TRANS-BOT", "modular", "python"],
-  "repository": "https://github.com/RyuuXS/TRANS-BOT",
+  "name": "OLL-BOT",
+  "description": "[OLL-BOT] userbot Telegram modular yang berjalan pada Python 3.9+",
+  "logo": "https://telegra.ph/file/9469c7a447c099ea49ccc.jpg",
+  "keywords": ["telegram", "userbot", "OLL-BOT", "modular", "python"],
+  "repository": "https://github.com/OLLPROJECT/OLL-USERBOT",
   "stack": "container",
   "env": {
     "API_KEY": {
