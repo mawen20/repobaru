@@ -13,7 +13,7 @@
   <img src="https://telegra.ph/file/ca011a5e1b5ba4d6c3b1e.jpg">
 </p>
 
-TRANS-BOT adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
+OLL-BOT adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 
 Berbasis [Paperplane](https://github.com/RaphielGang/Telegram-UserBot) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot.
 Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.
