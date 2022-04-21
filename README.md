@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./resources/oie_711285YN125u1s.gif" width="35px">☣ᴛʀᴀɴsʙᴏᴛ☣<img src="./resources/oie_711285YN125u1s.gif" width="35px"></h1>
+<h1 align="center"><img src="./resources/oie_711285YN125u1s.gif" width="35px">⚜️OLL-USERBOT⚜️<img src="./resources/oie_711285YN125u1s.gif" width="35px"></h1>
 <p align="center">
     <img alt="TRANS VERSION" src="https://img.shields.io/badge/TRANS%20VERSION-4.+-brightgreen"/>
     <img alt="BUILD IN" src="https://img.shields.io/badge/BUILD%20-Last Day-brightgreen"/>
@@ -10,7 +10,7 @@
    </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/d3114eda313e5f3ce5c78.jpg">
+  <img src="https://telegra.ph/file/ca011a5e1b5ba4d6c3b1e.jpg">
 </p>
 
 TRANS-BOT adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
