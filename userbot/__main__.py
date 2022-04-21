@@ -34,7 +34,7 @@ try:
     ).json()
     if user.id in transblacklist:
         LOGS.warning(
-            "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @RYUUSHINNI"
+            "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @myname_is_oll"
         )
         sys.exit(1)
 except Exception as e:
@@ -51,9 +51,9 @@ if not BOTLOG_CHATID:
     bot.loop.run_until_complete(autopilot())
 
 LOGS.info(
-    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/helpforRYUU")
+    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/Brothersexsid")
 LOGS.info(
-    f"🔥 TRANS-Userbot 🔥 ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
+    f"🔥 OLL-Userbot 🔥 ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
     
 async def trans_userbot_on():
     try:
@@ -61,7 +61,7 @@ async def trans_userbot_on():
             await bot.send_file(
                 BOTLOG_CHATID,
                 ALIVE_LOGO,
-                caption=f"✨ **Trⱥภs͢͢͢ 𝕌𝔅0T Berhasil Diaktifkan**!!\n━━━━━━━━╾╼╾╼╾╼╾╼╍\n➠ **Userbot Version** - 1.2 @TRANS-BOT\n➠ **Ketik** `.ping` **Untuk Mengecheck Bot**\n━━━━━━━━━╼╾╼╾╼╳\n➠ **Powered By:** @Belajarbersamaryuu ",
+                caption=f"✨ **OLL-userbot Berhasil Diaktifkan**!!\n━━━━━━━━╾╼╾╼╾╼╾╼╍\n➠ **Userbot Version** - 1.2 @OLL-BOT\n➠ **Ketik** `.ping` **Untuk Mengecheck Bot**\n━━━━━━━━━╼╾╼╾╼╳\n➠ **Powered By:** @gabutnyaoll",
             )
     except Exception as e:
         LOGS.info(str(e))
